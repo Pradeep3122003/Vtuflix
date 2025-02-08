@@ -1,0 +1,14 @@
+*{
+  margin: 0px 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body{
+  background-color: black;
+  color: white;
+  font-family: "Poppins", serif;
+  width: 100%;
+}
+::-webkit-scrollbar{
+  display: none;
+}

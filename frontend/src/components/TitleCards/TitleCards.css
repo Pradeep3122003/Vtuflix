@@ -1,0 +1,63 @@
+
+
+.titlecards .title{
+    color: white;
+    font-size: calc(1.1vh + 1.1vw);
+    margin-top: 4%;
+    margin-left: 5%;
+   
+}
+
+.titlecards .cardhold{
+    width: 90vw;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 20vh;
+    margin-top: 2vh;
+    display: flex;
+    gap: 2%;
+   
+}
+
+.titlecards .cardhold .card{
+    height: 100%;
+    width: 30%;
+    background-color: aliceblue;
+   position: relative;
+   display: block;
+   border-radius: 10px;
+   cursor: pointer;
+}
+
+.titlecards .cardhold .card img{
+    height: 100%;
+    width: 100%;
+    mask-image: linear-gradient(to bottom, transparent, black 75);
+    --webkit-mask-image: linear-gradient(to bottom, transparent, black 75);
+    
+}
+
+.titlecards .cardhold .card .caption{
+    position: absolute;
+    bottom: 0;
+
+}
+
+.titlecards .cardhold .card .play{
+position: absolute;
+height: 30%;
+width: 30%;
+top: 30%;
+left: 30%;
+opacity: 0;
+}
+
+.titlecards .cardhold .card:hover .play{
+  opacity: 1;
+  transition: 1s;
+}
+
+.titlecards .cardhold .card:hover img{
+    filter: grayscale(10);
+    transition: 1s;
+}

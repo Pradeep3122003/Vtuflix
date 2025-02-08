@@ -1,0 +1,68 @@
+.Login{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./../../assets/banner.jpg);
+    background-size: 100% 100%;
+    mask-image: radial-gradient(to left, transparent, black 100);
+}
+.logologin{
+    height: 10%;
+    width: 15%;
+}
+.loginform{
+    height: 60%;
+    width: 25%;
+    background-color: rgba(20, 20, 20, 0.911);
+    margin: 0 auto;
+    border-radius: 20px;
+    position: relative;
+}
+
+.loginform h1{
+    padding-top: 5%;
+    height: fit-content;
+    width: 100%;
+    margin-top: 3%;
+    text-align: center;
+}
+
+.loginform form{
+    height: 60%;
+    width: 70%;
+    
+    margin: 10% auto;
+}
+
+.loginform form input, button{
+    display: block;
+    background-color: rgb(65, 64, 64);
+    border: 1px solid black;
+    color: white;
+    width: 100%;
+    height: 18%;
+    margin-top: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 700;
+    font-size: calc(0.8vh + 0.8vw);
+}
+
+.loginform form button{
+  background-color: red;
+  cursor: pointer;
+}
+
+.loginform .formswitch{
+    display: flex;
+    width: 80%;
+    margin-left: 10%;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.loginform .formswitch h3{
+    cursor: pointer;
+}

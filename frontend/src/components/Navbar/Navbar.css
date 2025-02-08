@@ -1,0 +1,121 @@
+.navbar{
+    height: 8svh;
+    width: 100%;
+   z-index: 1;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    position: fixed;
+   
+}
+.navbar-left, .navbar-right{
+    height: 100%;
+    width: 40%;
+    display: flex;
+    align-items: center;
+   
+    
+}
+
+.navbar-right{
+  width: 30%;
+  margin-left: 30%;
+
+}
+
+.navbar-left img{
+    height: 100%;
+    width: 20%;
+    margin-left: 8%;
+}
+
+.navbar-left ul{
+    display: flex;
+    height: 100%;
+    margin-left: 10%;
+    width: 70%;
+    align-items: center;
+    list-style-type: none;
+    justify-content: space-between;
+    color: rgb(255, 255, 255);
+}
+
+.navbar-left ul li{
+  
+  display: block;
+  
+}
+
+.navbar-left ul li:hover{
+   scale: 1.1;
+   cursor: pointer;
+   transition: 0.5s;
+}
+
+.navbar-right input{
+  display: block;
+  width: 40%;
+  height: 50%;
+  background-color: black;
+  color: azure;
+  border-radius: 20px;
+  border: 1px solid white;
+ 
+  
+}
+
+
+.navbar-right .profile{
+    height: calc(2vh + 2vw);
+    width: calc(2vh + 2vw);
+    background-image: url(../../assets/profile.jpg);
+    background-size: 100% 100%;
+    margin-left: 5%;
+    cursor: pointer;
+    position: relative;
+}
+
+.navbar-right .name{
+    margin-left: 10px;
+}
+
+.navbar-right .profile .logout{
+  position: absolute;
+  top: 100%;
+  right: 0%;
+  height: fit-content;
+  width: 500%;
+  padding: 5px;
+  background-color: gray;
+  border-radius: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: none;
+  text-align: center;
+}
+.navbar-right .profile:hover .logout{
+  display: block;
+  transition: 1s;
+  
+}
+.navbar-right .bell{
+  margin-left: 20%;
+  cursor: pointer;
+}
+
+.navbar-right .bell:hover{
+   animation: bell 0.5s 0s 1 forwards ease;
+}
+
+@keyframes bell {
+  40%{
+    scale: 1.1;
+    transform: rotate(30deg);
+    transition: 0.1s;
+  }
+  80%{
+    transform: rotate(-30deg);
+    transition: 0.1s;
+  }
+
+}
